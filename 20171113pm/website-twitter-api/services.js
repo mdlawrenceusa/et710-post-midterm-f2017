@@ -5,7 +5,7 @@ angular.module('twitterApp.services', []).factory('twitterService', function($q)
     return {
         initialize: function() {
             //initialize OAuth.io with public key of the application
-            OAuth.initialize('19gVB-kbrzsJWQs5o7Ha2LIeX4I', {
+            OAuth.initialize('CoFx4dKBkNOK2qQbEUhckvheD6o', {
                 cache: true
             });
             //try to create an authorization result when the page loads,
