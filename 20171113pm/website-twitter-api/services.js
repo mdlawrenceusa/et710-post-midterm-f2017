@@ -4,7 +4,7 @@ angular.module('twitterApp.services', []).factory('twitterService', function($q)
 
     return {
         initialize: function() {
-            //initialize OAuth.io with public key of the application
+              //initialize OAuth.io with public key of the application
             OAuth.initialize('CoFx4dKBkNOK2qQbEUhckvheD6o', {
                 cache: true
             });

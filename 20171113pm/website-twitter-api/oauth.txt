@@ -1,23 +1,23 @@
- Successfully connected with twitter
+Successfully connected with twitter
 OAuth.initialize('CoFx4dKBkNOK2qQbEUhckvheD6o')
 OAuth.popup('twitter').done(function(result) {
-    console.log(result)
-    // do some stuff with result
+   console.log(result)
+   // do some stuff with result
 })
 The console print:
 
 {
-  "oauth_token": "37582860-US24MLEz0BDmlseSHCNnGqTFmYJ1MArxce8TNM1qp",
-  "oauth_token_secret": "PS2SSgpFS574PLNhdvMBQILxGn1PQfZbuhFzZWn56iZbf",
-  "provider": "twitter"
+ "oauth_token": "37582860-US24MLEz0BDmlseSHCNnGqTFmYJ1MArxce8TNM1qp",
+ "oauth_token_secret": "PS2SSgpFS574PLNhdvMBQILxGn1PQfZbuhFzZWn56iZbf",
+ "provider": "twitter"
 }
 result contains also additional methods to ease your API calls
 
 me() - Retrieve the user connected in a unified form (if the provider support this method)
 
 result.me().done(function(data) {
-    // do something with `data`, e.g. print data.name
+   // do something with `data`, e.g. print data.name
 })
 You can now make simple HTTP calls using these functions: get(url, settings), post(url, settings), put(url, settings), delete(url, settings), patch(url, settings)
 
-These methods take the same parameter than jQuery.ajax(). It injects all authorization parameters (access token, signature, nonce, timestamp etc...) for you and proxy your API calls if needed.
+These methods take the same parameter than jQuery.ajax(). It injects all authorization parameters (access token, signature, nonce, timestamp etc...) for you and proxy your API calls if needed. (access token, signature, nonce, timestamp etc...) for you and proxy your API calls if needed.
